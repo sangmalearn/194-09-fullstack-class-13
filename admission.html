@@ -53,9 +53,11 @@
                 <div class="col-6">                        
                     <label for="contact_number">Contact Number:</label>
                     <input type="text" id="contact_number" name="contact_number" placeholder="+880..." ><br>
-                 </div>                               
-                <!-- <label for="student_email">Email:</label>
-                <input type="student_email" id="email" name="student_email" placeholder="your@email" ><br><br> -->
+                 </div>  
+                <div class="col-6"> 
+                    <label for="student_email">Email:</label>
+                    <input type="student_email" id="email" name="student_email" placeholder="your@email" ><br>
+                </div>    
                 <div class="col-12">                                  
                     <label for="last_school">14. School last attended</label>
                     <input type="text" name="last_school" id="last_school" ><br>
@@ -91,7 +93,7 @@
             var presentAddress = document.getElementById("p_address").value;
             var permanentAddress = document.getElementById("per_address").value;
             var contactNumber = document.getElementById("contact_number").value;
-            //var studentEmail = document.getElementById("student_email").value;
+            var studentEmail = document.getElementById("student_email").value;
             var lastSchool = document.getElementById("last_school").value;
             var lastClass = document.getElementById("last_class").value;
             var lastYear = document.getElementById("last_year").value;
@@ -111,7 +113,7 @@
             "<br> Present address : "+presentAddress+
             "<br> Permanent address : "+permanentAddress+
             "<br> Contact number : "+contactNumber+
-            //"<br> Email : "+studentEmail+
+            "<br> Email : "+studentEmail+
             "<br> Last school attended : "+lastSchool+
             "<br> Last classs : "+lastClass+
             "<br> Last year : "+lastYear;
